@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "forms": [
+    {
+      "entity": "kundenverwaltung",
+      "app_id": "69fc3a6bc81a2ab1ef2c08f9",
+      "path": "/rest/apps/69fc3a6bc81a2ab1ef2c08f9/records",
+      "allowed_fields": [
+        "vorname",
+        "nachname",
+        "email",
+        "telefon",
+        "strasse",
+        "hausnummer",
+        "plz",
+        "ort",
+        "notfall_vorname",
+        "notfall_nachname",
+        "notfall_telefon",
+        "anmerkungen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Kundenverwaltung — Formular"
+    },
+    {
+      "entity": "katzenverwaltung",
+      "app_id": "69fc3a757c67e99597072cbc",
+      "path": "/rest/apps/69fc3a757c67e99597072cbc/records",
+      "allowed_fields": [
+        "katze_name",
+        "rasse",
+        "geburtsdatum",
+        "geschlecht",
+        "farbe",
+        "kastriert",
+        "impfstatus",
+        "tierarzt_vorname",
+        "tierarzt_nachname",
+        "tierarzt_telefon",
+        "medikamente",
+        "allergien",
+        "fuetterung",
+        "verhalten"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Katzenverwaltung — Formular"
+    },
+    {
+      "entity": "zimmerverwaltung",
+      "app_id": "69fc3a76a7c5acf5e5c9e86e",
+      "path": "/rest/apps/69fc3a76a7c5acf5e5c9e86e/records",
+      "allowed_fields": [
+        "zimmer_name",
+        "zimmer_typ",
+        "kapazitaet",
+        "tagespreis",
+        "beschreibung",
+        "ausstattung",
+        "zimmer_status"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Zimmerverwaltung — Formular"
+    },
+    {
+      "entity": "leistungsverwaltung",
+      "app_id": "69fc3a7710f4bd409d73e421",
+      "path": "/rest/apps/69fc3a7710f4bd409d73e421/records",
+      "allowed_fields": [
+        "leistung_name",
+        "leistung_beschreibung",
+        "preis",
+        "preiseinheit",
+        "leistung_kategorie"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Leistungsverwaltung — Formular"
+    },
+    {
+      "entity": "buchungsverwaltung",
+      "app_id": "69fc3a7752bee1ca7e1bd833",
+      "path": "/rest/apps/69fc3a7752bee1ca7e1bd833/records",
+      "allowed_fields": [
+        "buchungsnummer",
+        "buchungsstatus",
+        "anreise",
+        "abreise",
+        "gesamtpreis",
+        "anzahlung",
+        "zahlungsstatus",
+        "buchungshinweise"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Buchungsverwaltung — Formular"
+    },
+    {
+      "entity": "gesundheitsprotokoll",
+      "app_id": "69fc3a78c4fa4f3030d5c2e1",
+      "path": "/rest/apps/69fc3a78c4fa4f3030d5c2e1/records",
+      "allowed_fields": [
+        "protokoll_datum",
+        "fressverhalten",
+        "aktivitaet",
+        "befinden",
+        "medikamente_verabreicht",
+        "medikamente_notiz",
+        "beobachtungen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Gesundheitsprotokoll — Formular"
+    }
+  ]
+}
