@@ -166,7 +166,7 @@ export default function NeueBuchungPage() {
             : undefined,
         gesamtpreis: gesamtpreis ? parseFloat(gesamtpreis) : undefined,
         anzahlung: anzahlung ? parseFloat(anzahlung) : undefined,
-        zahlungsstatus: 'ausstehend',
+        zahlungsstatus: 'offen',
         buchungshinweise: buchungshinweise || undefined,
       });
       setSuccessBuchungsnummer(buchungsnummer);
