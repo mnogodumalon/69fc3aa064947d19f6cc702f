@@ -6,7 +6,6 @@ import { ErrorBoundary } from '@/components/ErrorBoundary';
 import { ErrorBusProvider } from '@/components/ErrorBus';
 import { Layout } from '@/components/Layout';
 import DashboardOverview from '@/pages/DashboardOverview';
-import { WorkflowPlaceholders } from '@/components/WorkflowPlaceholders';
 import AdminPage from '@/pages/AdminPage';
 import KundenverwaltungPage from '@/pages/KundenverwaltungPage';
 import KatzenverwaltungPage from '@/pages/KatzenverwaltungPage';
@@ -23,6 +22,8 @@ import PublicFormGesundheitsprotokoll from '@/pages/public/PublicForm_Gesundheit
 // <public:imports>
 // </public:imports>
 // <custom:imports>
+const NeueBuchungPage = lazy(() => import('@/pages/intents/NeueBuchungPage'));
+const TaeglichePflegerundePage = lazy(() => import('@/pages/intents/TaeglichePflegerundePage'));
 // </custom:imports>
 
 export default function App() {
@@ -41,7 +42,7 @@ export default function App() {
               {/* <public:routes> */}
               {/* </public:routes> */}
               <Route element={<Layout />}>
-                <Route index element={<><div className="mb-8"><WorkflowPlaceholders /></div><DashboardOverview /></>} />
+                <Route index element={<DashboardOverview />} />
                 <Route path="kundenverwaltung" element={<KundenverwaltungPage />} />
                 <Route path="katzenverwaltung" element={<KatzenverwaltungPage />} />
                 <Route path="zimmerverwaltung" element={<ZimmerverwaltungPage />} />
@@ -50,6 +51,8 @@ export default function App() {
                 <Route path="gesundheitsprotokoll" element={<GesundheitsprotokollPage />} />
                 <Route path="admin" element={<AdminPage />} />
                 {/* <custom:routes> */}
+                <Route path="intents/neue-buchung" element={<Suspense fallback={null}><NeueBuchungPage /></Suspense>} />
+                <Route path="intents/taegliche-pflegerunde" element={<Suspense fallback={null}><TaeglichePflegerundePage /></Suspense>} />
                 {/* </custom:routes> */}
               </Route>
             </Routes>

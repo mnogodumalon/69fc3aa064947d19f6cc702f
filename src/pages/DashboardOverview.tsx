@@ -113,6 +113,25 @@ export default function DashboardOverview() {
 
   return (
     <div className="space-y-6">
+      {/* Workflow-Shortcuts */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <a href="#/intents/neue-buchung" className="flex items-center gap-4 bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow min-w-0 overflow-hidden">
+          <IconCalendar size={22} className="text-primary shrink-0" stroke={1.5} />
+          <div className="min-w-0 flex-1">
+            <div className="font-semibold text-sm truncate">Neue Buchung anlegen</div>
+            <div className="text-xs text-muted-foreground truncate">Kunde → Katzen → Zimmer → Leistungen → Abschluss</div>
+          </div>
+          <IconChevronRight size={18} className="text-muted-foreground shrink-0" stroke={1.5} />
+        </a>
+        <a href="#/intents/taegliche-pflegerunde" className="flex items-center gap-4 bg-card border border-border border-l-4 border-l-primary rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow min-w-0 overflow-hidden">
+          <IconClipboardList size={22} className="text-primary shrink-0" stroke={1.5} />
+          <div className="min-w-0 flex-1">
+            <div className="font-semibold text-sm truncate">Tägliche Pflegerunde</div>
+            <div className="text-xs text-muted-foreground truncate">Buchung wählen → Gesundheitsprotokoll für Katzen erfassen</div>
+          </div>
+          <IconChevronRight size={18} className="text-muted-foreground shrink-0" stroke={1.5} />
+        </a>
+      </div>
       {/* KPI-Karten */}
       <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard
